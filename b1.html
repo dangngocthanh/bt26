@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rwed</title>
+</head>
+<body>
+<lable> Nhập a:
+    <input type="number" id="a">
+</lable>
+<lable> Nhập b:
+    <input type="number" id="b">
+</lable>
+<button id="checkk" onclick="checkkk()">Check</button>
+<h4 id="result"></h4>
+<script>
+    function checkkk(){
+let a=document.getElementById('a').value
+let b=document.getElementById('b').value
+        if (a%b===0) document.getElementById('result').innerHTML="a chia hết cho b"
+        else document.getElementById('result').innerHTML=" a không chia hết cho b"
+    }
+</script>
+</body>
+</html>
